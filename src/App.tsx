@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/images/react.svg'
-import './assets/scss/App.scss'
+import { useState } from "react";
+import NavigationMenu from "./components/navigation/curvedNav";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loteryObj, setLotery] = useState({ color: "#6BEFA3" });
 
   return (
     <div className="App">
-
+      <NavigationMenu bg={loteryObj.color} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
